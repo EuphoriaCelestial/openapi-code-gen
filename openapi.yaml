@@ -9,6 +9,13 @@ paths:
       responses:
         '200':
           description: A list of tasks
+      x-codeSamples:
+        - lang: python
+          source: |
+            # Python code sample
+            import requests
+            response = requests.get('https://your-api/tasks')
+            print(response.json())
     post:
       summary: Create a new task
       requestBody:
